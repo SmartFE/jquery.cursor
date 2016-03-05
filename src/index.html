@@ -13,7 +13,11 @@
 <script src="jquery.cursor.js"></script>
 <script>
   $(document).on("click", "#btn1", function () {
-    $("#demo").cursor()
+    $("#demo").cursor({
+      "text":"这是插入的一些文字，哪些位置被选中由下面两个参数决定",
+      "beginPos":2,  // 开头从0开始计数
+      "endPos":5     // 如果省略，则从beginPos一直选中到text的结尾
+    })
   });
 
 </script>

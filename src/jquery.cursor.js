@@ -8,7 +8,8 @@
   var defaultOptions = {
     "text": "此处添加文本",
     "beginPos": 0,
-    "endPos": 5
+    "endPos": 5,
+    "autoFocus": true
   };
 
   var methods = {
@@ -24,8 +25,13 @@
         + str.substring(currentCursorPos.selectionEnd, length));
 
       // 设置选中文本
-      _self.selectionStart = currentCursorPos.selectionStart + setting.beginPos;
-      _self.selectionEnd = currentCursorPos.selectionStart + setting.endPos + 1;
+      if (setting.autoFocus) {
+        var beginPos = options.beginPos ? options.beginPos : setting.beginPos;
+        var endPos = options.endPos ? options.endPos : setting.text.length - 1;
+        _self.selectionStart = currentCursorPos.selectionStart + beginPos;
+        _self.selectionEnd = currentCursorPos.selectionStart + endPos + 1;
+      }
+
 
       return this;
     },
