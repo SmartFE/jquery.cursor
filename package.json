@@ -1,0 +1,27 @@
+{
+  "name": "jquery-cursor",
+  "version": "1.0.0",
+  "description": "基于jquery的光标控制插件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmartFE/jquery.cursor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SmartFE/jquery.cursor/issues"
+  },
+  "homepage": "https://github.com/SmartFE/jquery.cursor#readme",
+  "dependencies": {
+    "del": "^2.2.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "merge-stream": "^1.0.0"
+  }
+}
