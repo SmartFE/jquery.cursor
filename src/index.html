@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jquery.cursor插件</title>
+</head>
+<body>
+<textarea name="demo" id="demo" cols="30" rows="10">
+
+</textarea>
+<button id="btn1">点我获取光标位置</button>
+<script src="../bower_components/jquery/jquery.js"></script>
+<script src="jquery.cursor.js"></script>
+<script>
+  $(document).on("click", "#btn1", function () {
+    $("#demo").cursor()
+  });
+
+</script>
+</body>
+</html>

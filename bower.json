@@ -1,0 +1,27 @@
+{
+  "name": "jquery-cursor",
+  "homepage": "https://github.com/SmartFE/jquery.cursor",
+  "authors": [
+    "liangshaofeng <liangshaofeng@innobuddy.com>"
+  ],
+  "description": "控制光标",
+  "main": "src/jquery.cursor.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "smartstudy",
+    "cursor"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.9.1"
+  }
+}
