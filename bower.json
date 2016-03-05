@@ -23,6 +23,5 @@
   ],
   "dependencies": {
     "jquery": "1.9.1"
-  },
-  "release": "1.0.0"
+  }
 }
